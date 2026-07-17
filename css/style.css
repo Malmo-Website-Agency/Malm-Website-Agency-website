@@ -8,8 +8,8 @@
   --border: rgba(10, 18, 40, 0.10);
   --border-strong: rgba(10, 18, 40, 0.18);
   --text: #0b1120;
-  --text-muted: #4b5568;
-  --text-dim: #8892a3;
+  --text-muted: #1b2130;
+  --text-dim: #545d70;
   --accent: #16255c;
   --accent-strong: #1d4ed8;
   --accent-soft: rgba(22, 37, 92, 0.08);
@@ -21,8 +21,8 @@
   --dark-bg: #070a14;
   --dark-bg-2: #0d1326;
   --dark-text: #f5f6fb;
-  --dark-text-muted: #aab3c9;
-  --dark-text-dim: #6f7995;
+  --dark-text-muted: #eef0f8;
+  --dark-text-dim: #a6aec4;
   --dark-border: rgba(255, 255, 255, 0.10);
   --dark-border-strong: rgba(255, 255, 255, 0.20);
   --dark-accent: #4a72d6;
@@ -178,7 +178,7 @@ p.lead {
   flex-shrink: 0;
   box-shadow: 0 4px 18px rgba(0,0,0,0.35);
 }
-.logo-badge img, .logo-badge svg { width: 100%; height: 100%; }
+.logo-badge img, .logo-badge svg { width: 100%; height: 100%; object-fit: contain; }
 
 .brand-name-mono { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim); letter-spacing: 0.1em; display: block; margin-top: 3px; }
 
