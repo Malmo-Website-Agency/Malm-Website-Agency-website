@@ -285,14 +285,13 @@ p.lead {
 .vision-card p + p { margin-top: 16px; }
 
 /* ============ Tjänster / pricing ============ */
-.services-layout { display: flex; flex-direction: column; gap: 56px; }
+.services-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; }
 
 .pricing-card {
   background: linear-gradient(160deg, var(--bg-panel-2), var(--bg-panel));
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-lg);
   padding: 40px;
-  max-width: 480px;
   position: relative;
   overflow: hidden;
 }
@@ -465,7 +464,7 @@ footer.site-footer {
 @media (max-width: 900px) {
   .main-nav { display: none; }
   .nav-toggle { display: flex; }
-  .vision-grid { grid-template-columns: 1fr; }
+  .vision-grid, .services-layout { grid-template-columns: 1fr; }
   .case-card { flex-basis: 280px; }
   .side-label { display: none; }
   section { padding: 84px 0; }
