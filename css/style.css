@@ -13,9 +13,9 @@
   --accent: #16255c;
   --accent-strong: #1d4ed8;
   --accent-soft: rgba(22, 37, 92, 0.08);
-  --gold: #b8862e;
-  --gold-strong: #e8c26a;
-  --gold-soft: rgba(184, 134, 46, 0.14);
+  --gold: #8a6a2f;
+  --gold-strong: #bd9856;
+  --gold-soft: rgba(138, 106, 47, 0.16);
 
   /* dark navy/black surfaces used for header, hero, footer, "why us" box */
   --dark-bg: #070a14;
@@ -167,10 +167,10 @@ p.lead {
 
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
 
-.brand { display: flex; align-items: center; gap: 14px; font-family: var(--font-sans); font-weight: 600; font-size: 17px; letter-spacing: 0.02em; }
+.brand { display: flex; align-items: center; gap: 14px; font-family: var(--font-sans); font-weight: 600; font-size: 22px; letter-spacing: 0.02em; }
 .logo-badge {
-  width: 64px; height: 64px;
-  border-radius: 16px;
+  width: 96px; height: 96px;
+  border-radius: 20px;
   border: 1px solid var(--border-strong);
   background: #000;
   padding: 0;
@@ -180,7 +180,7 @@ p.lead {
 }
 .logo-badge img, .logo-badge svg { width: 100%; height: 100%; object-fit: contain; }
 
-.brand-name-mono { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim); letter-spacing: 0.1em; display: block; margin-top: 3px; }
+.brand-name-mono { font-family: var(--font-mono); font-size: 13.5px; color: var(--text-dim); letter-spacing: 0.1em; display: block; margin-top: 3px; }
 
 .main-nav { display: flex; align-items: center; gap: 36px; }
 .main-nav a {
@@ -218,7 +218,7 @@ p.lead {
   z-index: 0;
   background-image:
     radial-gradient(60% 55% at 78% 18%, rgba(74, 114, 214, 0.30), transparent 60%),
-    radial-gradient(45% 40% at 15% 80%, rgba(232, 194, 106, 0.08), transparent 60%),
+    radial-gradient(45% 40% at 15% 80%, rgba(189, 152, 86, 0.08), transparent 60%),
     linear-gradient(100deg, rgba(6, 9, 18, 0.94) 0%, rgba(6, 9, 18, 0.82) 30%, rgba(6, 9, 18, 0.55) 58%, rgba(6, 9, 18, 0.72) 100%),
     url("../assets/hero-oresund-bridge.jpg");
   background-size: auto, auto, auto, cover;
@@ -229,9 +229,9 @@ p.lead {
 .hero-lines { position: absolute; inset: 0; z-index: 1; opacity: 0.22; pointer-events: none; }
 .hero-lines svg { width: 100%; height: 100%; }
 .hero-lines .cable { stroke: rgba(90, 135, 230, 0.45); stroke-width: 1; fill: none; stroke-dasharray: 4 520; stroke-dashoffset: 0; animation: cableDraw 9s ease-in-out infinite; }
-.hero-lines .cable:nth-child(2) { animation-delay: 0.6s; stroke: rgba(232, 194, 106, 0.22); }
+.hero-lines .cable:nth-child(2) { animation-delay: 0.6s; stroke: rgba(189, 152, 86, 0.22); }
 .hero-lines .cable:nth-child(3) { animation-delay: 1.2s; }
-.hero-lines .cable:nth-child(4) { animation-delay: 1.8s; stroke: rgba(232, 194, 106, 0.18); }
+.hero-lines .cable:nth-child(4) { animation-delay: 1.8s; stroke: rgba(189, 152, 86, 0.18); }
 .hero-lines .cable:nth-child(5) { animation-delay: 2.4s; }
 
 @keyframes cableDraw {
@@ -371,7 +371,7 @@ p.lead {
 .gold-box {
   position: relative;
   background: linear-gradient(155deg, #101a36, #070a14);
-  border: 1px solid rgba(232, 194, 106, 0.35);
+  border: 1px solid rgba(189, 152, 86, 0.35);
   border-radius: var(--radius-lg);
   padding: 48px;
   overflow: visible;
@@ -394,7 +394,7 @@ p.lead {
   width: 6px; height: 6px;
   background: var(--gold-strong);
   border-radius: 50%;
-  box-shadow: 0 0 8px 2px rgba(245, 216, 150, 0.8);
+  box-shadow: 0 0 8px 2px rgba(209, 183, 138, 0.8);
   opacity: 0;
   animation: sparkFall 3.4s ease-in infinite;
 }
@@ -413,7 +413,7 @@ p.lead {
   background-clip: text;
   color: transparent;
 }
-.nya-heading p { color: var(--text-muted); }
+.nya-heading p { color: var(--text-muted); text-align: justify; text-align-last: center; }
 
 .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .case-card {
