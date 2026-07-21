@@ -38,6 +38,7 @@
   --font-sans: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Courier New", monospace;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
   --max-width: 1180px;
 }
 
@@ -101,10 +102,11 @@ section { position: relative; padding: 120px 0; }
   box-shadow: 0 0 12px 2px var(--accent);
 }
 
-h1, h2, h3 { font-family: var(--font-sans); font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; }
+h1, h3 { font-family: var(--font-sans); font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; }
+h2 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; letter-spacing: 0; text-wrap: balance; }
 
 h2.section-title {
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: clamp(34px, 4.8vw, 54px);
   margin-bottom: 24px;
   max-width: 760px;
 }
@@ -309,19 +311,6 @@ p.lead {
 .price-includes li { display: flex; gap: 10px; font-size: 14.5px; font-weight: 500; color: var(--text); }
 .price-includes li::before { content: "→"; color: var(--accent); font-family: var(--font-mono); flex-shrink: 0; }
 
-.contact-people { display: flex; flex-direction: column; gap: 18px; margin-top: 28px; }
-.person-card {
-  display: flex; justify-content: space-between; align-items: center; gap: 16px;
-  padding: 18px 20px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--bg-panel);
-}
-.person-card .role { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); margin-top: 4px; }
-.person-links { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; font-family: var(--font-mono); font-size: 12.5px; }
-.person-links a { color: var(--text-muted); transition: color 0.2s ease; }
-.person-links a:hover { color: var(--accent-strong); }
-
 /* ============ Digital konversation ============ */
 .consult-banner {
   background: var(--bg-panel);
@@ -334,7 +323,7 @@ p.lead {
   gap: 40px;
   flex-wrap: wrap;
 }
-.consult-banner h2 { font-size: clamp(24px, 3vw, 34px); max-width: 520px; }
+.consult-banner h2 { font-size: clamp(30px, 3.6vw, 42px); max-width: 520px; }
 .consult-banner p { color: var(--text-muted); max-width: 460px; margin-top: 14px; }
 
 /* ============ Om oss ============ */
@@ -385,7 +374,7 @@ p.lead {
   background: radial-gradient(60% 80% at 90% 0%, var(--gold-soft), transparent 70%);
   z-index: -1;
 }
-.gold-box h2 { color: var(--gold-strong); font-size: clamp(24px, 3vw, 32px); margin-bottom: 20px; }
+.gold-box h2 { color: var(--gold-strong); font-size: clamp(28px, 3.4vw, 38px); margin-bottom: 20px; }
 .gold-box p { color: var(--dark-text-muted); font-size: 16px; max-width: 780px; }
 
 .sparkle-field { position: absolute; inset: -40px -20px -80px; pointer-events: none; z-index: 3; }
@@ -406,7 +395,7 @@ p.lead {
 
 .nya-horisonter { padding-top: 70px; }
 .nya-heading { position: relative; text-align: center; margin: 0 auto 56px; max-width: 640px; }
-.nya-heading h2 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 16px; }
+.nya-heading h2 { font-size: clamp(34px, 4.6vw, 52px); margin-bottom: 16px; }
 .nya-heading .gold-glow-text {
   background: linear-gradient(90deg, var(--gold), var(--gold-strong));
   -webkit-background-clip: text;
@@ -415,15 +404,38 @@ p.lead {
 }
 .nya-heading p { color: var(--text-muted); text-align: justify; text-align-last: center; }
 
-.case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.case-section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 30px);
+  text-align: center;
+  margin: 0 auto 32px;
+  color: var(--text);
+}
+
+.case-grid {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 4px 4px 16px;
+  margin: 0 -4px;
+  -webkit-overflow-scrolling: touch;
+}
+.case-grid::-webkit-scrollbar { height: 8px; }
+.case-grid::-webkit-scrollbar-track { background: transparent; }
+.case-grid::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 999px; }
 .case-card {
-  border: 1px solid var(--border);
+  flex: 0 0 340px;
+  scroll-snap-align: start;
+  border: 1px solid rgba(10, 18, 40, 0.06);
   border-radius: var(--radius-lg);
   padding: 36px;
-  background: var(--bg-panel);
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  background: #ffffff;
+  box-shadow: 0 12px 32px -18px rgba(10, 18, 40, 0.14);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
-.case-card:hover { border-color: var(--gold); transform: translateY(-6px); }
+.case-card:hover { border-color: var(--gold); transform: translateY(-6px); box-shadow: 0 18px 40px -16px rgba(10, 18, 40, 0.18); }
 .case-logo { height: 32px; color: var(--text); margin-bottom: 22px; opacity: 0.9; }
 .case-card p { color: var(--text-muted); font-size: 15px; margin-bottom: 20px; }
 .case-link { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold-strong); display: inline-flex; align-items: center; gap: 6px; }
@@ -452,7 +464,8 @@ footer.site-footer {
 @media (max-width: 900px) {
   .main-nav { display: none; }
   .nav-toggle { display: flex; }
-  .vision-grid, .services-layout, .about-layout, .case-grid { grid-template-columns: 1fr; }
+  .vision-grid, .services-layout, .about-layout { grid-template-columns: 1fr; }
+  .case-card { flex-basis: 280px; }
   .side-label { display: none; }
   section { padding: 84px 0; }
   .consult-banner { padding: 34px; }
@@ -462,6 +475,4 @@ footer.site-footer {
   .wrap { padding: 0 20px; }
   .hero { padding: 150px 0 90px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
-  .person-card { flex-direction: column; align-items: flex-start; }
-  .person-links { align-items: flex-start; }
 }
