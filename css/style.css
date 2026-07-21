@@ -285,13 +285,14 @@ p.lead {
 .vision-card p + p { margin-top: 16px; }
 
 /* ============ Tjänster / pricing ============ */
-.services-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; }
+.services-layout { display: flex; flex-direction: column; gap: 56px; }
 
 .pricing-card {
   background: linear-gradient(160deg, var(--bg-panel-2), var(--bg-panel));
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-lg);
   padding: 40px;
+  max-width: 480px;
   position: relative;
   overflow: hidden;
 }
@@ -327,11 +328,11 @@ p.lead {
 .consult-banner p { color: var(--text-muted); max-width: 460px; margin-top: 14px; }
 
 /* ============ Om oss ============ */
-.about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about-text { max-width: 680px; }
 .about-text p { color: var(--text-muted); }
 .about-text p + p { margin-top: 16px; }
 
-.founders { display: grid; gap: 20px; }
+.founders { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 640px; }
 .founder-card {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -464,7 +465,7 @@ footer.site-footer {
 @media (max-width: 900px) {
   .main-nav { display: none; }
   .nav-toggle { display: flex; }
-  .vision-grid, .services-layout, .about-layout { grid-template-columns: 1fr; }
+  .vision-grid { grid-template-columns: 1fr; }
   .case-card { flex-basis: 280px; }
   .side-label { display: none; }
   section { padding: 84px 0; }
