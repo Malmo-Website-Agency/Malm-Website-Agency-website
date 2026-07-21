@@ -463,7 +463,6 @@ p.lead {
 .case-card p { color: var(--text-muted); font-size: 15px; margin-bottom: 20px; }
 .case-link { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold-strong); display: inline-flex; align-items: center; gap: 6px; }
 .case-link:hover { color: var(--gold); }
-.placeholder-note { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-dim); margin-top: 14px; }
 
 /* ============ Tillkommande tjänster ============ */
 .upcoming { text-align: center; }
