@@ -58,23 +58,38 @@
   --bg-panel-2: #131a33;
 }
 
+/* Text/headings that sit directly on the page's marine-blue canvas (not inside a light card) */
+.on-deco {
+  --text: var(--dark-text);
+  --text-muted: var(--dark-text-muted);
+  --text-dim: var(--dark-text-dim);
+  --accent: var(--dark-accent);
+  --accent-strong: var(--dark-accent-strong);
+  --border: var(--dark-border);
+  --border-strong: var(--dark-border-strong);
+}
+
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: var(--bg);
+  background-color: #143b5c;
   background-image:
-    radial-gradient(48rem 34rem at 10% 0%, rgba(29, 78, 216, 0.07), transparent 62%),
-    radial-gradient(40rem 32rem at 92% 16%, rgba(138, 106, 47, 0.055), transparent 60%),
-    radial-gradient(46rem 40rem at 6% 46%, rgba(22, 37, 92, 0.05), transparent 62%),
-    radial-gradient(38rem 34rem at 96% 62%, rgba(189, 152, 86, 0.05), transparent 60%),
-    radial-gradient(44rem 36rem at 12% 92%, rgba(29, 78, 216, 0.055), transparent 62%),
-    radial-gradient(36rem 30rem at 90% 100%, rgba(22, 37, 92, 0.045), transparent 60%);
-  background-repeat: no-repeat;
+    radial-gradient(120% 90% at 15% 0%, rgba(27, 78, 117, 0.55), transparent 62%),
+    radial-gradient(120% 90% at 100% 100%, rgba(15, 46, 77, 0.6), transparent 62%),
+    url("../assets/bg-pattern-deco.svg");
+  background-size: 100vw 100vh, 100vw 100vh, 480px 480px;
+  background-position: 0 0, 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-attachment: fixed, fixed, fixed;
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+@media (max-width: 700px) {
+  body { background-size: 100vw 100vh, 100vw 100vh, 320px 320px; }
 }
 
 img, svg { display: block; max-width: 100%; }
@@ -111,7 +126,7 @@ section { position: relative; padding: 120px 0; }
 }
 
 h1, h3 { font-family: var(--font-sans); font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; }
-h2 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; letter-spacing: 0; text-wrap: balance; }
+h2 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; letter-spacing: 0; text-wrap: balance; color: var(--text); }
 
 h2.section-title {
   font-size: clamp(34px, 4.8vw, 54px);
@@ -418,7 +433,7 @@ p.lead {
   font-size: clamp(22px, 2.6vw, 30px);
   text-align: center;
   margin: 0 auto 32px;
-  color: var(--text);
+  color: var(--dark-text);
 }
 
 .case-grid {

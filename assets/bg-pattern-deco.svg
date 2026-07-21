@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+<g opacity="0.9">
+<rect x="155.00" y="279.00" width="170.00" height="26.00" fill="none" stroke="#DCEBFA" stroke-width="0.9" opacity="0.085"/>
+<rect x="170.00" y="253.00" width="140.00" height="26.00" fill="none" stroke="#DCEBFA" stroke-width="0.9" opacity="0.077"/>
+<rect x="185.00" y="227.00" width="110.00" height="26.00" fill="none" stroke="#DCEBFA" stroke-width="0.9" opacity="0.069"/>
+<rect x="200.00" y="201.00" width="80.00" height="26.00" fill="none" stroke="#DCEBFA" stroke-width="0.9" opacity="0.061"/>
+<rect x="215.00" y="175.00" width="50.00" height="26.00" fill="none" stroke="#DCEBFA" stroke-width="0.9" opacity="0.053"/>
+</g>
+<line x1="240.00" y1="145.00" x2="240.00" y2="305.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<g>
+<rect x="90.00" y="40.00" width="16.00" height="300.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.06"/>
+<line x1="98.00" y1="54.00" x2="98.00" y2="326.00" stroke="#DCEBFA" stroke-width="0.5" opacity="0.041999999999999996"/>
+<rect x="374.00" y="70.00" width="16.00" height="260.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.055"/>
+<line x1="382.00" y1="84.00" x2="382.00" y2="316.00" stroke="#DCEBFA" stroke-width="0.5" opacity="0.0385"/>
+</g>
+<g>
+<line x1="32.00" y1="280.00" x2="78.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="448.00" y1="280.00" x2="402.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="45.00" y1="280.00" x2="91.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="435.00" y1="280.00" x2="389.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="58.00" y1="280.00" x2="104.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="422.00" y1="280.00" x2="376.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="71.00" y1="280.00" x2="117.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+<line x1="409.00" y1="280.00" x2="363.00" y2="234.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.045"/>
+</g>
+<g>
+<path d="M 34.00 0.00 A 34.00 34.00 0 0 1 0.00 34.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.09"/>
+<path d="M 446.00 480.00 A 34.00 34.00 0 0 1 480.00 446.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.09"/>
+<path d="M 50.00 0.00 A 50.00 50.00 0 0 1 0.00 50.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.078"/>
+<path d="M 430.00 480.00 A 50.00 50.00 0 0 1 480.00 430.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.078"/>
+<path d="M 66.00 0.00 A 66.00 66.00 0 0 1 0.00 66.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.066"/>
+<path d="M 414.00 480.00 A 66.00 66.00 0 0 1 480.00 414.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.066"/>
+<path d="M 82.00 0.00 A 82.00 82.00 0 0 1 0.00 82.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.054"/>
+<path d="M 398.00 480.00 A 82.00 82.00 0 0 1 480.00 398.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.054"/>
+<path d="M 98.00 0.00 A 98.00 98.00 0 0 1 0.00 98.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.042"/>
+<path d="M 382.00 480.00 A 98.00 98.00 0 0 1 480.00 382.00" fill="none" stroke="#DCEBFA" stroke-width="0.8" opacity="0.042"/>
+</g>
+<rect x="18" y="18" width="444" height="444" fill="none" stroke="#DCEBFA" stroke-width="0.6" opacity="0.035"/>
+<g opacity="1">
+<line x1="0.00" y1="0.00" x2="20.00" y2="0.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="0.00" y1="0.00" x2="0.00" y2="20.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="480.00" y1="0.00" x2="460.00" y2="0.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="480.00" y1="0.00" x2="480.00" y2="20.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="0.00" y1="480.00" x2="20.00" y2="480.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="0.00" y1="480.00" x2="0.00" y2="460.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="480.00" y1="480.00" x2="460.00" y2="480.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+<line x1="480.00" y1="480.00" x2="480.00" y2="460.00" stroke="#DCEBFA" stroke-width="0.6" opacity="0.05"/>
+</g>
+</svg>
