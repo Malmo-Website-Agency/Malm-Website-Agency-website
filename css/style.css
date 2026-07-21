@@ -2,7 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #ffffff;
+  --bg: #fafbfd;
   --bg-panel: #f4f6fa;
   --bg-panel-2: #eaeef5;
   --border: rgba(10, 18, 40, 0.10);
@@ -61,7 +61,15 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(48rem 34rem at 10% 0%, rgba(29, 78, 216, 0.07), transparent 62%),
+    radial-gradient(40rem 32rem at 92% 16%, rgba(138, 106, 47, 0.055), transparent 60%),
+    radial-gradient(46rem 40rem at 6% 46%, rgba(22, 37, 92, 0.05), transparent 62%),
+    radial-gradient(38rem 34rem at 96% 62%, rgba(189, 152, 86, 0.05), transparent 60%),
+    radial-gradient(44rem 36rem at 12% 92%, rgba(29, 78, 216, 0.055), transparent 62%),
+    radial-gradient(36rem 30rem at 90% 100%, rgba(22, 37, 92, 0.045), transparent 60%);
+  background-repeat: no-repeat;
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
